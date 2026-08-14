@@ -1,0 +1,15 @@
+# docker-compose.yml: Runs the API locally with safe stub defaults.
+services:
+  api:
+    build: .
+    environment:
+      LLM_MODE: ${LLM_MODE:-stub}
+      CLOVASTUDIO_API_KEY: ${CLOVASTUDIO_API_KEY:-}
+      CLOVASTUDIO_MODEL: ${CLOVASTUDIO_MODEL:-HCX-005}
+      CLOVASTUDIO_BASE_URL: ${CLOVASTUDIO_BASE_URL:-https://clovastudio.stream.ntruss.com}
+      CLOVASTUDIO_TIMEOUT_SECONDS: ${CLOVASTUDIO_TIMEOUT_SECONDS:-30}
+      SAMPLE_DATA_PATH: ${SAMPLE_DATA_PATH:-data/samples/documents.yaml}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    ports:
+      - "127.0.0.1:8000:8000"
+    restart: unless-stopped

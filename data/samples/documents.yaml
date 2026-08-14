@@ -1,0 +1,16 @@
+# documents.yaml: Provides synthetic, non-financial evidence for local API and test verification.
+documents:
+  - document_id: SAMPLE-PROJECT-001
+    title: Pension Advisor project overview
+    content: >-
+      Pension Advisor는 연금 질문을 작업 명세로 변환하고, 검색된 근거를 독립적으로
+      검증한 뒤 승인된 내용만 전달하기 위한 팀 공동개발 프로젝트입니다.
+    keywords:
+      - 프로젝트
+      - Pension Advisor
+      - 구조
+      - 아키텍처
+    authority_level: sample
+    effective_date: 2026-08-14
+    source_uri: PROJECT.md
+    is_sample: true
