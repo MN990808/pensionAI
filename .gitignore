@@ -1,0 +1,26 @@
+# .gitignore: Prevents credentials, raw financial documents, caches, and generated artifacts from entering Git.
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.DS_Store
+
+# Raw or derived financial data stays local.
+data/raw/
+data/processed/
+data/indexes/
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# Local logs and databases.
+*.log
+*.db
+*.sqlite3
